@@ -1,0 +1,27 @@
+
+
+
+
+
+
+
+
+katello-installer -v \
+--foreman-admin-username admin \
+--foreman-admin-password smartvm \
+--foreman-initial-organization "ACME" \
+--foreman-initial-location "Beijing" \
+--capsule-dns true \
+--capsule-dns-interface eno16780032 \
+--capsule-dns-zone xenlab.local \
+--capsule-dns-forwarders 192.168.16.1 \
+--capsule-dns-reverse 16.168.192.in-addr.arpa \
+--capsule-dhcp true \
+--capsule-dhcp-interface eno16780032 \
+--capsule-dhcp-range "192.168.16.100 192.168.16.200" \
+--capsule-dhcp-gateway 192.168.16.1 \
+--capsule-dhcp-nameservers 192.168.16.3 \
+--capsule-tftp true \
+--capsule-tftp-servername $(hostname) \
+--capsule-puppet true \
+--capsule-puppetca true

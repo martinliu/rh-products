@@ -1,6 +1,6 @@
 
 
-#RDB MySQL sysbench testing
+#RDS MySQL sysbench testing
 
 
 ## Resource 
